@@ -1,2 +1,4 @@
-# adb_remote_android_photos
-Remotely capturing photos from Android device with adb
+# Captura remota de fotos de um Android
+Este script permite a captura remota de fotos em dispositivos Android via linha de comando usando ADB
+
+
