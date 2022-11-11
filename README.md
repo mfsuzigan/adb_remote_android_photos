@@ -37,7 +37,7 @@ ou
 
 ### 2. Criando uma conexão entre o host e o dispositivo Android
 
-É preciso configurar uma conexão entre o host e o dispositivo Android onde serão executados os comandos, neste caso aqui via rede Wi-Fi/LAN à qual ambos estejam conectados. 
+É preciso configurar uma conexão entre o host e o dispositivo Android onde serão executados os comandos, neste caso aqui via **rede Wi-Fi/LAN à qual ambos estejam conectados**. 
 
 Estes passos também estão descritos na [documentação do ADB](https://developer.android.com/studio/command-line/adb?hl=pt-br#wireless)
 
