@@ -41,16 +41,12 @@ ou
 
 Estes passos também estão descritos na [documentação do ADB](https://developer.android.com/studio/command-line/adb?hl=pt-br#wireless)
 
-1. Ative o modo de depuração USB no Android. Detalhes [aqui](https://developer.android.com/studio/debug/dev-options?hl=pt-br#:~:text=Para%20ativar%20as%20op%C3%A7%C3%B5es%20do,o%20dispositivo%20%3E%20N%C3%BAmero%20da%20vers%C3%A3o)
-2. Conecte um cabo USB entre o host e o dispositivo
-3. Configure o dispositivo Android para detectar uma conexão TCP/IP na porta 5555. 
-
-No host, execute: `adb tcpip 5555` . 
-
-Confirme no dispositivo Android, se necessário.
-4. Encontre o endereço IP do dispositivo Android. Vá em Configurações > Configurações de Wi-Fi > Avançado > Endereço IP
-5. Estabeleça por fim a conexão entre os dois utilizando o IP encontrado. Execute: `adb connect [IP DO DISPOSITIVO ANDROID]`. Desconecte o cabo USB.
-6. Opcionalmente, verifique que a conexão está ativa. Execute: `adb devices`. O resultado deverá ser algo como:
+1. Ative o **modo de depuração USB no dispositivo Android**. Detalhes [aqui](https://developer.android.com/studio/debug/dev-options?hl=pt-br#:~:text=Para%20ativar%20as%20op%C3%A7%C3%B5es%20do,o%20dispositivo%20%3E%20N%C3%BAmero%20da%20vers%C3%A3o)
+2. Conecte um **cabo USB entre o host e o dispositivo**
+3. Configure o dispositivo Android para detectar uma **conexão TCP/IP na porta 5555**. No host, execute: `adb tcpip 5555` . Confirme no dispositivo Android, se necessário.
+4. **Encontre o endereço IP do dispositivo Android** na sua rede LAN. Vá em Configurações > Configurações de Wi-Fi > Avançado > Endereço IP
+5. Por fim, **estabeleça a conexão entre os dois utilizando o IP encontrado**. Execute: `adb connect [IP DO DISPOSITIVO ANDROID]`. O cabo USB não é mais necessário, desconecte-o.
+6. Opcionalmente, **verifique que a conexão está ativa**. Execute: `adb devices`. O resultado deverá ser algo como:
 ```
 List of devices attached
 192.168.100.6:5555	device
