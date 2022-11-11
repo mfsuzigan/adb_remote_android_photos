@@ -41,8 +41,8 @@ ou
 
 Estes passos também estão descritos na [documentação do ADB](https://developer.android.com/studio/command-line/adb?hl=pt-br#wireless)
 
-1. Ative o **modo de depuração USB no dispositivo Android**. Detalhes [aqui](https://developer.android.com/studio/debug/dev-options?hl=pt-br#:~:text=Para%20ativar%20as%20op%C3%A7%C3%B5es%20do,o%20dispositivo%20%3E%20N%C3%BAmero%20da%20vers%C3%A3o).
-2. Conecte um **cabo USB entre o host e o dispositivo**.
+1. Conecte um **cabo USB entre o host e o dispositivo**.
+2. Ative o **modo de depuração USB no dispositivo Android**. Detalhes [aqui](https://developer.android.com/studio/debug/dev-options?hl=pt-br#:~:text=Para%20ativar%20as%20op%C3%A7%C3%B5es%20do,o%20dispositivo%20%3E%20N%C3%BAmero%20da%20vers%C3%A3o).
 3. Configure o dispositivo Android para detectar uma **conexão TCP/IP na porta 5555**. No host, execute: 
 
     `adb tcpip 5555`
