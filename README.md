@@ -46,7 +46,7 @@ O script irá:
 2. inicializar a câmera e focalizá-la;
 3. tirar a foto;
 4. bloquear o dispositivo e 
-5. transferir o arquivo (JPG) da câmera para o host no diretório onde foi executado o script.
+5. transferir o arquivo (JPG) da câmera (diretório `/sdcard/DCIM/Camera/`) para o host, no diretório onde foi executado o script.
 
 A saída no console será:
 
