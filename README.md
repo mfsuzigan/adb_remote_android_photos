@@ -13,23 +13,23 @@ Com o ADB, é possível executar comandos em um Android a partir da linha de com
 
 É necessário ter o ADB instalado no host. 
 
-Sistemas Debian/Ubuntu: 
+Sistemas Debian/Ubuntu: `apt-get install android-tools-adb`
 
-`apt-get install android-tools-adb`
+Sistemas Fedora/SUSE: `sudo yum install android-tools`
 
-Sistemas Fedora/SUSE: 
+## Criando uma conexão entre o host e o dispositivo Android
 
-`sudo yum install android-tools`
-
-## Configurando o ADB no dispositivo Android
-
-É preciso configurar uma conexão entre o host e o dispositivo Android onde serão executados os comandos, neste caso aqui via rede Wi-Fi/LAN compartilhada entre os dois. 
+É preciso configurar uma conexão entre o host e o dispositivo Android onde serão executados os comandos, neste caso aqui via rede Wi-Fi/LAN à qual ambos estejam conectados. 
 
 Estes passos também estão descritos na [documentação do ADB](https://developer.android.com/studio/command-line/adb?hl=pt-br#wireless)
 
 1. Ative o modo de depuração USB no Android. Detalhes [aqui](https://developer.android.com/studio/debug/dev-options?hl=pt-br#:~:text=Para%20ativar%20as%20op%C3%A7%C3%B5es%20do,o%20dispositivo%20%3E%20N%C3%BAmero%20da%20vers%C3%A3o)
 2. Conecte um cabo USB entre o host e o dispositivo
-3. Configure o dispositivo Android para detectar uma conexão TCP/IP na porta 5555. No host, execute: `adb tcpip 5555` . Confirme no dispositivo Android, se necessário.
+3. Configure o dispositivo Android para detectar uma conexão TCP/IP na porta 5555. 
+
+No host, execute: `adb tcpip 5555` . 
+
+Confirme no dispositivo Android, se necessário.
 4. Encontre o endereço IP do dispositivo Android. Vá em Configurações > Configurações de Wi-Fi > Avançado > Endereço IP
 5. Estabeleça por fim a conexão entre os dois utilizando o IP encontrado. Execute: `adb connect [IP DO DISPOSITIVO ANDROID]`. Desconecte o cabo USB.
 6. Opcionalmente, verifique que a conexão está ativa. Execute: `adb devices`. O resultado deverá ser algo como:
@@ -39,17 +39,15 @@ List of devices attached
 ```
 
 ## Executando o script
-Na linha de comando, execute:
-
-`sh take_photo.sh`
+Na linha de comando, execute: `sh take_photo.sh`
 
 O script irá:
 1. desbloquear o dispositivo;
 2. inicializar a câmera e focalizá-la;
 3. tirar a foto;
 4. bloquear o dispositivo e 
-5. transferir o arquivo (JPG) da câmera para o diretório onde está o script.
+5. transferir o arquivo (JPG) da câmera para o host no diretório onde foi executado o script.
 
 A saída no console será:
 
-![saída no console](console_output.png)
+![saída no console](assets/console_output.png)
