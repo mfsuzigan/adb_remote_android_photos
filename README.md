@@ -25,7 +25,7 @@ Com o ADB, é possível executar comandos em um Android a partir da linha de com
 
 ## Requisitos
 
-### Instalando o ADB no host
+### 1. Instalando o ADB no host
 
 É necessário ter o ADB instalado no host. Execute:
 
@@ -35,7 +35,7 @@ ou
 
 `sudo yum install android-tools` (Fedora/SUSE)
 
-### Criando uma conexão entre o host e o dispositivo Android
+### 2. Criando uma conexão entre o host e o dispositivo Android
 
 É preciso configurar uma conexão entre o host e o dispositivo Android onde serão executados os comandos, neste caso aqui via rede Wi-Fi/LAN à qual ambos estejam conectados. 
 
