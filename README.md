@@ -48,7 +48,7 @@ Estes passos também estão descritos na [documentação do ADB](https://develop
     `adb tcpip 5555`
 
     Confirme no dispositivo Android, se necessário.
-4. **Encontre o endereço IP do dispositivo Android** na sua rede LAN. Vá em Configurações > Configurações de Wi-Fi > Avançado > Endereço IP.
+4. **Encontre o endereço IP do dispositivo Android** na sua rede Wi-Fi/LAN. No Android, vá em Configurações > Configurações de Wi-Fi > Avançado > Endereço IP.
 5. Por fim, **estabeleça a conexão entre os dois utilizando o IP encontrado**. No host, execute: 
 
     `adb connect [IP DO DISPOSITIVO ANDROID]`
