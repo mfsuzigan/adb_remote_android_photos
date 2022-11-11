@@ -1,5 +1,5 @@
-# Captura remota de fotos de um dispositivo Android
-Bash script para a captura remota de fotos em dispositivos Android via linha de comando usando [ADB](https://developer.android.com/studio/command-line/adb?hl=pt-br).
+# Capturando remotamente fotos de um dispositivo Android
+Este é um shell script para a captura remota de fotos em dispositivos Android via linha de comando usando [ADB](https://developer.android.com/studio/command-line/adb?hl=pt-br).
 
 Com ele, celulares velhos (por exemplo) podem ser transformados em insuspeitas câmeras de segurança.
 
