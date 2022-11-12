@@ -43,7 +43,7 @@ ou
 
 É preciso configurar uma conexão entre o host e o dispositivo Android onde serão executados os comandos, neste caso aqui via **rede Wi-Fi/LAN à qual ambos estejam conectados**. 
 
-Estes passos também estão descritos na [documentação do ADB](https://developer.android.com/studio/command-line/adb?hl=pt-br#wireless)
+Estes passos também estão descritos na [documentação do ADB](https://developer.android.com/studio/command-line/adb?hl=pt-br#wireless):
 
 1. Conecte um **cabo USB entre o host e o dispositivo**.
 2. Ative o **modo de depuração USB no dispositivo Android**. Detalhes [aqui](https://developer.android.com/studio/debug/dev-options?hl=pt-br#:~:text=Para%20ativar%20as%20op%C3%A7%C3%B5es%20do,o%20dispositivo%20%3E%20N%C3%BAmero%20da%20vers%C3%A3o).
@@ -63,3 +63,5 @@ Estes passos também estão descritos na [documentação do ADB](https://develop
 List of devices attached
 192.168.100.6:5555	device
 ```
+
+*Observação: a conexão é automaticamente cortada depois de algum tempo de inatividade. Caso queira, utilize o script `keep-alive.sh` para enviar uma sinalização despertar de tela ao dispositivo e manter a comunicação.*
