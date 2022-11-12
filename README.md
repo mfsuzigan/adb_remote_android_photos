@@ -3,6 +3,10 @@ Este é um shell script para a captura remota de fotos em dispositivos Android v
 
 Com ele, celulares velhos (por exemplo) podem ser transformados em insuspeitas câmeras de segurança.
 
+| ![Time-lapse feito com o script e crontab num Xiaomi Mi A2 velho](assets/time-lapse.gif) | 
+|:--:| 
+| *Time-lapse feito com o script e crontab num Xiaomi Mi A2 velho* |
+
 ## Executando o script
 Veja os [requisitos](#requisitos). Na linha de comando, execute: `sh take_photo.sh`
 
