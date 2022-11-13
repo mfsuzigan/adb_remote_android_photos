@@ -7,7 +7,7 @@ sleep 3
 
 # desbloqueio via PIN, se necessário
 # echo 'desbloqueando dispositivo'
-# adb shell input text 6845
+# adb shell input text [PIN DO DISPOSITIVO]
 # adb shell input keyevent KEYCODE_ENTER
 
 echo 'iniciando camera'
